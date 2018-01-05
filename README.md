@@ -1,4 +1,4 @@
-# HTML5 Custom Audio player
+# HTML5 Custom Audio Player
 
 A custom HTML5 audio player template that replaces the standard audio controls with custom artwork, artist name, track name, and custom play / pause elements.
 
