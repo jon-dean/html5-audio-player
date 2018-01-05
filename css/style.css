@@ -1,0 +1,86 @@
+body {
+  width: 960px;
+  margin: 50px auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#audioWrapper {
+  width: 650px;
+  height: 150px;
+  margin: 0 auto;
+  border: 1px solid #f3f3f3;
+  padding: 0;
+  position: relative;
+}
+
+#trackArtwork {
+  float: left;
+}
+
+#playPause, .play, .pause {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+}
+
+.play {
+  background-image: url('../assets/play.png');
+}
+
+.pause {
+  background-image: url('../assets/pause.png');
+}
+
+#trackArtist, #trackTitle {
+  display: block;
+  text-align: left;
+  overflow: hidden;
+  padding: 10px 5px 5px 15px;
+  color: #585858;
+}
+
+#trackArtist {
+  font-size: 2em;
+}
+
+#trackTitle {
+  font-size: 1.5em;
+}
+
+#trackProgress {
+  position: absolute;
+  bottom: 10px;
+  left: 165px;
+  width: 480px;
+}
+
+#elapsedTime, #remainingTime {
+  color: #aaaaaa;
+  padding: 3px 5px 0 5px;
+  float: left;
+  font-size: 0.9em;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  border: 1px solid #f0f0f0;
+  width: 80%;
+  height: 15px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  float: left;
+}
+
+input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border:1px solid #bdbdbd;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #bdbdbd;
+}

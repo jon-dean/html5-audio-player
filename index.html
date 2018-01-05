@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Custom HTML5 Audio Player</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div id="audioWrapper">
+    <audio id="audioPlayer">
+      <source src="assets/tcm.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <div id="playPause" class="play"></div>
+    <div id="trackArtwork"><img src="assets/tcm.png" /></div>
+    <div id="trackArtist">The Smiths</div>
+    <div id="trackTitle">This Charming Man</div>
+    <div id="trackProgress">
+      <div id="elapsedTime"></div>
+      <input type="range" id="scrubBar" value="0" max="100" />
+      <div id="remainingTime"></div>
+    </div>
+  </div>
+<script type="text/javascript" src="js/audioplayer.js"></script>
+</body>
+</html>
