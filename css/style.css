@@ -1,5 +1,5 @@
 body {
-  width: 960px;
+  max-width: 960px;
   margin: 50px auto;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -17,6 +17,11 @@ body {
   float: left;
 }
 
+#trackArtwork img {
+  width: 150px;
+  height: 150px;
+}
+
 #playPause, .play, .pause {
   position: absolute;
   top: 0;
@@ -27,10 +32,12 @@ body {
 
 .play {
   background-image: url('../assets/play.png');
+  background-size: contain;
 }
 
 .pause {
   background-image: url('../assets/pause.png');
+  background-size: contain;
 }
 
 #trackArtist, #trackTitle {
@@ -83,4 +90,41 @@ input::-webkit-slider-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background: #bdbdbd;
+}
+
+@media (max-width: 575px) {
+	/* Phones in Portrait Orientation */
+  #audioWrapper {
+    width: 350px;
+    height: 500px;
+  }
+  
+  #trackArtwork {
+    float: none;
+  }
+  
+  #trackArtwork img {
+    width: 350px;
+    height: 350px;
+  }
+  
+  #playPause, .play, .pause {
+    width: 350px;
+    height: 350px;
+  }
+
+  #trackProgress {
+    left: 10px;
+    width: 340px;
+  }
+  
+  #elapsedTime, #remainingTime {
+    padding: 3px 5px 0 5px;
+    float: left;
+  }
+
+  input[type="range"] {
+    width: 72%;
+  }
+  
 }
